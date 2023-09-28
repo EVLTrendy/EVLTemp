@@ -17,6 +17,19 @@ a:visited{
     font-family: 'Dunkin';
     src: url('./fonts/dunkin/Dunkin.otf');
 }
+
+.homelogo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  
+  .homelogo img {
+    width: 20px;
+    height: 20px;
+  }
+  
 #section {
     display: flex;
     position: relative;

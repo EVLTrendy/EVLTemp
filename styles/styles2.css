@@ -69,6 +69,19 @@ footer {
     padding: 10px 0;
 }
 
+.homelogo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.homelogo img {
+  width: 20px;
+  height: 20px;
+}
+
+
 .insidetxt{
     white-space: pre-line;
   }
