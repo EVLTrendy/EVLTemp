@@ -1,73 +1,70 @@
-  
-  @keyframes wave {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 100% 0;
-    }
+/* Common styles for all screen sizes */
+@keyframes wave {
+  0% {
+    background-position: 0 0;
   }
-
-
-
-.wave-container {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,#ffd9e5 25%, #ffccd6 50%, #ffb8c9 75%);
-    background-size: 150% 100%;
-    animation: wave 4s linear infinite;
+  100% {
+    background-position: 100% 0;
   }
-
-
-body, h1, section {
-    margin: 0;
-    padding: 0;
 }
 
-h2{
-    text-align: center;
+.wave-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffd9e5 25%, #ffccd6 50%, #ffb8c9 75%);
+  background-size: 150% 100%;
+  animation: wave 4s linear infinite;
+}
+
+body,
+h1,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .first-div {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
 }
 
 .first-div .backsplash {
-    background-image: url('your-backsplash-image.jpg'); 
-    background-size: cover;
-    height: 200px; 
+  background-image: url('your-backsplash-image.jpg');
+  background-size: cover;
+  height: 200px;
 }
 
 .first-div h1 {
-    font-size: 24px;
-    margin-top: 20px;
+  font-size: 24px;
+  margin-top: 20px;
 }
 
 .contentdiv {
-    margin-top: 20px;
-    padding-top: 20px;
-    height: 1200px;
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
-
 section {
-    font-size: 16px;
-    text-align: center;
+  font-size: 16px;
+  text-align: center;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .homelogo {
@@ -82,62 +79,76 @@ footer {
   height: 20px;
 }
 
+.insidetxt {
+  white-space: pre-line;
+}
 
-.insidetxt{
-    white-space: pre-line;
+.picture {
+  width: 100%; /* Adjust width for all screens */
+  max-width: 1280px; /* Max width for large screens */
+  height: auto; /* Maintain aspect ratio */
+  border: solid black 1px;
+}
+
+.link {
+  font-size: 40px;
+  text-align: center;
+}
+
+.split-container {
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Adjust height for all screens */
+}
+
+.top-section {
+  width: 100%; /* Adjust width for all screens */
+  max-width: 1280px; /* Max width for large screens */
+  height: auto; /* Adjust height for all screens */
+  background: #f0f0f0;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-section {
+  display: flex;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  justify-content: space-between;
+  height: auto; /* Adjust height for all screens */
+  background-color: rgba(255, 255, 255, 0.862);
+  margin-left: 10px; /* Adjust the margin for all screens */
+  margin-top: 10px;
+  border: black solid 1px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-left {
+  flex: 2;
+  padding: 10px;
+}
+
+.section-right {
+  flex: 1;
+  padding: 10px;
+  font-family: 'Bebas Neue';
+  margin-top: 50px;
+}
+
+/* Media query for MacBook resolution (1280x800) */
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+  /* Adjust styles for MacBook resolution here */
+  .container {
+    max-width: 100%;
+    padding: 10px;
   }
-  
-  .picture{
-    width: 1280px;
-    height: 720px;
-    border: solid black 1px;
-  }
-  
-  .link{
-    font-size: 40px;
-    text-align: center;
-  }
-  
-  .split-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
+
   .top-section {
-    width: 1280px; 
-    height: 720px; 
-    background: #f0f0f0; 
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    
+    max-width: 100%;
   }
-  
+
   .bottom-section {
-    display: flex;
-    font-weight: 500;
-    font-family: 'Playfair Display', serif;
-    justify-content: space-between;
-    height: 200px; 
-    background-color: rgba(255, 255, 255, 0.862);
-    margin-left: 100px;
-    margin-top: 10px;
-    border: black solid 1px;
-    border-radius: 5px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin-left: 0;
   }
-  
-
-  .section-left {
-    flex: 2; 
-    padding: 10px;
-  }
-  
-  .section-right {
-    flex: 1; 
-    padding: 10px;
-    font-family: 'Bebas Neue';
-    margin-top: 50px;
-
-  }
-  
-  
+}
