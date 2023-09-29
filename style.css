@@ -18,6 +18,8 @@ body {
     align-items: center;
 }
 
+
+
 #title {
     text-align: center;
     flex-grow: 1; /* Expand and take up available space in the header */
